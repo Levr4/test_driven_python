@@ -1,0 +1,10 @@
+version: '3'
+services: 
+  pytest:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - .:/workdir
+    tty: true
+    container_name: pytest
